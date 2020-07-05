@@ -19,6 +19,7 @@ The designs were created to the following widths:
 - Light Grayish Cyan (Filter Tablets): hsl(180, 31%, 95%)
 - Dark Grayish Cyan: hsl(180, 8%, 52%)
 - Very Dark Grayish Cyan: hsl(180, 14%, 20%)
+- Header Cyan: hsl(180, 29%, 50%)
 
 ## Typography
 
@@ -30,6 +31,8 @@ The designs were created to the following widths:
 
 - Family: [Spartan](https://fonts.google.com/specimen/Spartan)
 - Weights: 500, 700
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap');
 
 
 <!-- Item Start -->
