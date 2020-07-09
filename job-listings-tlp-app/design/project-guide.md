@@ -100,3 +100,193 @@ A massive thank you to our community sponsors!
 - [Sizzy](https://bit.ly/fm-sizzy) is an extremely useful browser designed specifically to improve a developer's workflow when building websites. You can fire up multiple device emulators and run them all in sync while building out your web pages. Perfect for helping build fully responsive websites!
 - [Diversify Tech](https://bit.ly/fem-diversify-tech) is an amazing resource for underrepresented people in tech. The site features job listings for anyone seeking new opportunities. The resource section is also full of useful links to dive into!
 - [Dracula PRO](https://bit.ly/fem-dracula) is a beautiful dark theme to help keep you focused and productive while you code. The theme isn't just for your editor either. You can also apply it to your most-used apps like your terminal and even Slack!
+
+
+
+:root {
+  --background: hsl(180, 52%, 96%);
+  --filter-tablets: hsl(180, 31%, 95%);
+  --dark-gray-cyan: hsl(180, 8%, 52%);
+  --very-dk-gray-cyan: hsl(180, 14%, 20%);
+  --header-cyan: hsl(180, 29%, 50%);
+  --font: "Spartan", sans serif;
+  --shadow-card: 2px 15px 30px -20px rgba(0, 0, 0, 0.3);
+  --shadow-tag: 3px 3px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+<!-- Item Start -->
+  Photosnap
+  New!
+  Featured
+  Senior Frontend Developer
+  1d ago
+  Full Time
+  USA only
+  <!-- Role -->
+  Frontend
+  <!-- Level -->
+  Senior
+  <!-- Languages -->
+  HTML
+  CSS
+  JavaScript
+  <!-- Item End -->
+
+  <!-- Item Start -->
+  Manage
+  New!
+  Featured
+  Fullstack Developer
+  1d ago
+  Part Time
+  Remote
+  <!-- Role -->
+  Fullstack
+  <!-- Level -->
+  Midweight
+  <!-- Languages -->
+  Python
+  <!-- Tools -->
+  React
+  <!-- Item End -->
+
+  <!-- Item Start -->
+  Account
+  New!
+  Junior Frontend Developer
+  2d ago
+  Part Time
+  USA only
+  <!-- Role -->
+  Frontend
+  <!-- Level -->
+  Junior
+  <!-- Languages -->
+  JavaScript
+  <!-- Tools -->
+  React
+  Sass
+  <!-- Item End -->
+
+  <!-- Item Start -->
+  MyHome
+  Junior Frontend Developer
+  5d ago
+  Contract
+  USA only
+  <!-- Role -->
+  Frontend
+  <!-- Level -->
+  Junior
+  <!-- Languages -->
+  CSS
+  JavaScript
+  <!-- Item End -->
+
+  <!-- Item Start -->
+  Loop Studios
+  Software Engineer
+  1w ago
+  Full Time
+  Worldwide
+  <!-- Role -->
+  Fullstack
+  <!-- Level -->
+  Midweight
+  <!-- Languages -->
+  JavaScript
+  Ruby
+  <!-- Tools -->
+  Sass
+  <!-- Item End -->
+
+  <!-- Item Start -->
+  FaceIt
+  Junior Backend Developer
+  2w ago
+  Full Time
+  UK only
+  <!-- Role -->
+  Backend
+  <!-- Level -->
+  Junior
+  <!-- Languages -->
+  Ruby
+  <!-- Tools -->
+  RoR
+  <!-- Item End -->
+
+  <!-- Item Start -->
+  Shortly
+  Junior Developer
+  2w ago
+  Full Time
+  Worldwide
+  <!-- Role -->
+  Frontend
+  <!-- Level -->
+  Junior
+  <!-- Languages -->
+  HTML
+  JavaScript
+  <!-- Tools -->
+  Sass
+  <!-- Item End -->
+
+  <!-- Item Start -->
+  Insure
+  Junior Frontend Developer
+  2w ago
+  Full Time
+  USA only
+  <!-- Role -->
+  Frontend
+  <!-- Level -->
+  Junior
+  <!-- Languages -->
+  JavaScript
+  <!-- Tools -->
+  Vue
+  Sass
+  <!-- Item End -->
+
+  <!-- Item Start -->
+  Eyecam Co.
+  Full Stack Engineer
+  3w ago
+  Full Time
+  Worldwide
+  <!-- Role -->
+  Fullstack
+  <!-- Level -->
+  Midweight
+  <!-- Languages -->
+  JavaScript
+  Python
+  <!-- Tools -->
+  Django
+  <!-- Item End -->
+
+  <!-- Item Start -->
+  The Air Filter Company
+  Front-end Dev
+  1mo ago
+  Part Time
+  Worldwide
+  <!-- Role -->
+  Frontend
+  <!-- Level -->
+  Junior
+  <!-- Languages -->
+  JavaScript
+  <!-- Tools -->
+  React
+  Sass
+  <!-- Item End -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>

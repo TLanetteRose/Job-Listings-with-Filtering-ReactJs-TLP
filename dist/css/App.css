@@ -12,7 +12,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   outline: 1px solid black;
 }
 
@@ -23,3 +24,4 @@ body {
   font-size: 15px;
   background: var(--background);
 }
+/*# sourceMappingURL=App.css.map */

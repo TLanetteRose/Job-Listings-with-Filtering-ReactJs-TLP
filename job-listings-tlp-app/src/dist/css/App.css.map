@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../job-listings-tlp-app/src/App.scss"
+    ],
+    "names": [],
+    "file": "App.css"
+}

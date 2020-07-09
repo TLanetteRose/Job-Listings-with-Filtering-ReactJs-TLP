@@ -1,0 +1,27 @@
+:root {
+    --background: hsl(180, 52%, 96%);
+    --filter-tablets: hsl(180, 31%, 95%);
+    --dark-gray-cyan: hsl(180, 8%, 52%);
+    --very-dk-gray-cyan: hsl(180, 14%, 20%);
+    --header-cyan: hsl(180, 29%, 50%);
+    --font: "Spartan", sans serif;
+    --shadow-card: 2px 15px 30px -20px rgba(0, 0, 0, 0.3);
+    --shadow-tag: 3px 3px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid black;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: var(--font);
+    font-size: 15px;
+    background: var(--background);
+}
