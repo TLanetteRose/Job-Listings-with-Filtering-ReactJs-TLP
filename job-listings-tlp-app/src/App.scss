@@ -42,4 +42,48 @@ body {
 
 .container {
     max-width: 1110px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0 40px 40px;
+}
+
+/* Page */
+
+#filterBar {
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: $shadow-card;
+    padding: 20px 40px;
+    margin-top: -36px;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    transition: opacity 1s;
+}
+
+
+
+
+/* Footer */
+footer {
+    margin-top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+}
+
+/* Attribution styles */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
