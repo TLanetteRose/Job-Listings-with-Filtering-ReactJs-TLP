@@ -5,33 +5,31 @@ const JobCard = ({item, select}) => {
 
     return (
         <div className={`card job${item.featured ? ' featured' : ''}`}>
-            <div className='jobs__column job__column-left'>
+            <div className='section description'>
                 <div className='logo'>
-                    <img src={pathToAssets(item.logo)} alt={item.company} />
+                    <img src={pathToAssets(item.logo)} alt={item.companany} />
                 </div>
-                <div className='jobs__info'>
-                    <div className='company__info'>
+                <div className='infos'>
+                    <div className='top row'>
                         <div className='company'>{item.company}</div>
                         {item.new && <div className='highlighted new'>New!</div>}
                         {item.featured && <div className='highlighted featured'>Featured</div>}
                     </div>
                     <div className='row'>
-                        <span className='jobs__title'>{item.position}</span>
+                        <div className='position'>{item.position}</div>
                     </div>
-
-                    <div className='bottom-row jobs__details'>
-                        <span className='jobs__details-item'>{item.postedAt}</span>
-                        <span className='jobs__details-item'> {item.contract} </span>
-                        <span className='jobs__details-item'>{item.location}</span>
+                    <div className='bottom row'>
+                        <span className='postedAt'>{item.postedAt}</span>
+                        <span className='contract'>{item.contract}</span>
+                        <span className='location'>{item.location}</span>
                     </div>
                 </div>
             </div>
-
-            <div className='jobs__column jobs__column-right'>
-                <span className='filter-item' onclick={() => select({value:item.role, key:'role'})}>{item.role}</span>
-                <span className='filter-item' onClick={() => select({value:item.level, key: 'level'})}>{item.level}</span>
+            <div className='section filters'>
+                <span className='filter-item' onClick={() => select({value:item.role, key:'role'})}>{item.role}</span>
+                <span className='filter-item' onClick={() => select({value:item.level, key:'level'})}>{item.level}</span>
                 {item.tools.map((tool,i) => <span key={i} className='filter-item' onClick={() => select({value:tool, key:'tools'})}>{tool}</span>)}
-                {item.languages.map((language,i) => <span key={i} className='filter-item' onClick={() => select({value:language, key:'language'})}>{language}</span>)}
+                {item.languages.map((language,i) => <span key={i} className='filter-item' onClick={() => select({value:language, key:'languages'})}>{language}</span>)}
             </div>
         </div>
     );
