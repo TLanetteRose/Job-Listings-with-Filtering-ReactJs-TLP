@@ -40,6 +40,7 @@ function App() {
     useEffect(() =>{
         if(filterData.length > 0) {
             const filteredItems = data.filter((item) => {
+                // eslint-disable-next-line
                 return filterData.every(filter => {
                     if(Array.isArray(item[filter.key])){
                         return item[filter.key].includes(filter.value)
