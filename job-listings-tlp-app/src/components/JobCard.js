@@ -1,38 +1,36 @@
-import React from 'react';
+import React from 'react'
 
-const JobCard = ({item, select}) => {
-    const pathToAssets = require.context('.');
+export default function JobCard(props) {
+    let job = props.job;
 
     return (
-        <div className={`card job${item.featured ? ' featured' : ''}`}>
-            <div className='section description'>
-                <div className='logo'>
-                    <img src={pathToAssets(item.logo)} alt={item.companany} />
-                </div>
-                <div className='infos'>
-                    <div className='top row'>
-                        <div className='company'>{item.company}</div>
-                        {item.new && <div className='highlighted new'>New!</div>}
-                        {item.featured && <div className='highlighted featured'>Featured</div>}
-                    </div>
-                    <div className='row'>
-                        <div className='position'>{item.position}</div>
-                    </div>
-                    <div className='bottom row'>
-                        <span className='postedAt'>{item.postedAt}</span>
-                        <span className='contract'>{item.contract}</span>
-                        <span className='location'>{item.location}</span>
-                    </div>
-                </div>
+        <div className={job.featured ? "job-card featured-job" : "job-card"}>
+            <div className="logo">
+                <img src={requestAnimationFrame('../images/' + job.logo)} alt="" className="company-logo" />
             </div>
-            <div className='section filters'>
-                <span className='filter-item' onClick={() => select({value:item.role, key:'role'})}>{item.role}</span>
-                <span className='filter-item' onClick={() => select({value:item.level, key:'level'})}>{item.level}</span>
-                {item.tools.map((tool,i) => <span key={i} className='filter-item' onClick={() => select({value:tool, key:'tools'})}>{tool}</span>)}
-                {item.languages.map((language,i) => <span key={i} className='filter-item' onClick={() => select({value:language, key:'languages'})}>{language}</span>)}
+            <div className="details">
+                <div className="primary-content">
+                    <div className="row">
+                        <p className={'company-name'}>{job.company}</p>
+                        {job.new && <div className="highlight new">NEW!</div>}
+                        {job.featured && <div className="highlight featured">FEATURED</div>}
+                    </div>
+                    <h2 className={'position'}>{job.position}</h2>
+                    <div className="secondary">
+                        <p>{job.postedAt}</p>
+                        <p>{job.contract}</p>
+                        <p>{job.location}</p>
+                    </div>
+                </div>
+                <ul className="tags">
+                    {job.languages.map((language) => <li onClick={(e) => props.toggleLanguageFilter(language)} key={language}>{language}</li>)}
+                    {job.tools.map((tool) => <li onClick={(e) => props.toggleToolFilter(tool)} key={tool}>{tool}</li>)}
+                </ul>
             </div>
         </div>
-    );
+    )
 }
 
-export default JobCard;
+
+
+
