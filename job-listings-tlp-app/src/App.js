@@ -61,6 +61,7 @@ function App() {
             <Header />
             <div className='container'>
                 {filterData.length > 0 && <FilterBar items={filterData} removeItem={HandleRemove} clear={handleClear}/>}
+                
                 {items && items.map(item => <JobCard item={item} key={item.id} select={handleSelectFilter}/>)}
             </div>
             <Footer />

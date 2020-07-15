@@ -1,14 +1,17 @@
 import React from 'react';
 
-export default function JobCard ({item, select}) {
+//Webpack V4 you need to use require.context() for importing images from data.json
 
-  
+
+export default function JobCard ({item, select}) {
+    const pathToAssets = require.context('./assets');
+
     return (
         
         <div className={`card job${item.featured ? ' featured-label' : ''}`}>
             <div className='section description'>
                 <div className='logo'>
-                    <img src={item.logo} alt={item.company} />
+                    <img src={pathToAssets(item.logo)} alt={item.company} />
                 </div>
                 <div className='job-info'>
                     <div className='top row'>
