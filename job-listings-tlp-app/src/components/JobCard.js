@@ -9,7 +9,7 @@ export default function JobCard ({item, select}) {
     return (
         
         <div className={`card job${item.featured ? ' featured-label' : ''}`}>
-            <div className='section description'>
+            <div className='section descrip&tion'>
                 <div className='logo'>
                     <img src={pathToAssets(item.logo)} alt={item.company} />
                 </div>
@@ -36,7 +36,7 @@ export default function JobCard ({item, select}) {
                 {item.languages.map((language,i) => <span key={i} className='filter-item' onClick={() => select({value:language, key:'languages'})}>{language}</span>)}
             </div>
         </div>
-    )
+    );
 }
 
 
