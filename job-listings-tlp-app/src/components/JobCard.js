@@ -9,7 +9,7 @@ export default function JobCard ({item, select}) {
     return (
         
         <div className={`card job${item.featured ? ' featured-label' : ''}`}>
-            <div className='section descrip&tion'>
+            <div className='section description'>
                 <div className='logo'>
                     <img src={pathToAssets(item.logo)} alt={item.company} />
                 </div>

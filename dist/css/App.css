@@ -64,7 +64,7 @@ body {
 
 #filterTab > span {
   font-size: 13px;
-  color: #7b8e8e;
+  color: #5ba4a4;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -150,12 +150,12 @@ body {
 }
 
 .job .description .position:hover {
-  color: #7b8e8e;
+  color: #5ba4a4;
 }
 
 .job .description .company {
   color: #5ba4a4;
-  margin-right: 12px;
+  margin-right: 13px;
   font-size: 14px;
   font-weight: 700;
 }
@@ -255,7 +255,7 @@ body {
 }
 
 .filter-tab .close-button:hover {
-  background-color: #2c3a3a;
+  background-color: #7b8e8e;
 }
 
 /* Footer */
@@ -275,5 +275,60 @@ footer {
 
 .attribution a {
   color: #3e52a3;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  header {
+    background-image: url("./components/assets/images/bg-header-mobile.svg");
+  }
+  #filterTab {
+    padding: 20px 24px;
+  }
+  .job {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 40px 4px;
+    padding: 32px 24px 16px;
+  }
+  .job .description .bottom {
+    color: #7b8e8e;
+    font-size: 13px;
+  }
+  .job .description .bottom span {
+    margin-right: 8px;
+  }
+  .job .description .bottom span::after {
+    margin-left: 8px;
+  }
+  .job .description .position {
+    font-size: 15px;
+  }
+  .job .description .company {
+    font-size: 13px;
+  }
+  .job .logo {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .job .logo > img {
+    width: 48px;
+  }
+  .job .section {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    padding: 16px 0;
+  }
+  .job .section.filters {
+    border-top: 1px solid #bdc1c0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 /*# sourceMappingURL=App.css.map */

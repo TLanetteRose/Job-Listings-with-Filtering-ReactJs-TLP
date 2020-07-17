@@ -56,10 +56,11 @@ body {
 }
 
 /* Page */
+
 #filterTab {
     width: calc(100% - 40px);
     position: absolute;
-    top: 0;
+    top:0;
     transform: translateY(-50%);
     padding: 20px 40px;
     flex-wrap: wrap;
@@ -69,7 +70,7 @@ body {
     }
     & > span {
         font-size: 13px;
-        color: $dk-gray-cyan;
+        color: $header-cyan;
         text-decoration: underline;
         cursor: pointer;
         &:hover {
@@ -87,7 +88,7 @@ body {
 }
 
 .job {
-    width: 100%;
+    width:100%;
     position: relative;
     margin: 24px 4px;
     padding: 32px 40px;
@@ -127,12 +128,12 @@ body {
             font-weight: 700;
             cursor: pointer;
             &:hover {
-                color: $dk-gray-cyan;
+                color: $header-cyan;
             }
         }
         & .company {
             color: $header-cyan;
-            margin-right: 12px;
+            margin-right: 13px;
             font-size: 14px;
             font-weight: 700;
         }
@@ -163,6 +164,7 @@ body {
             background-color: $header-cyan;
         }
     }
+
 }
 
 .filter-item {
@@ -180,7 +182,7 @@ body {
     display: flex;
     margin: 8px;
     cursor: pointer;
-    & .filter-item  {
+    & .filter-item {
         margin: 0;
         border-radius: 5px 0 0 5px;
         cursor: default;
@@ -199,7 +201,7 @@ body {
             background-color: $white;
             position: absolute;
             top: 14px;
-            left: 25%; 
+            left: 25%;
         }
         &::after {
             transform: rotate(45deg);
@@ -208,12 +210,10 @@ body {
             transform: rotate(-45deg);
         }
         &:hover {
-            background-color: $very-dk-gray-cyan;
+            background-color: $dk-gray-cyan;
         }
     }
 }
-
-
 
 /* Footer */
 footer {
@@ -233,4 +233,57 @@ footer {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */ 
+
+@media screen and (max-width: 768px) {
+
+    header {
+        background-image: url('./components/assets/images/bg-header-mobile.svg');
+    }
+    #filterTab {
+        padding: 20px 24px;
+    }
+    .job {
+        flex-wrap: wrap;
+        margin: 40px 4px;
+        padding: 32px 24px 16px;
+        & .description {
+            & .bottom {
+                color: $dk-gray-cyan;
+                font-size: 13px;
+                & span {
+                    margin-right: 8px;
+                    &::after {
+                        margin-left: 8px;
+                    }
+                }
+            }
+            & .position {
+                font-size: $font-size;
+            }
+            & .company {
+                font-size: 13px;
+            }
+        }
+        & .logo {
+            position: absolute;
+            top: 0;
+            left: 24px;
+            transform: translateY(-50%);
+            & > img {
+                width: 48px;
+            }
+        }
+        & .section {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 16px 0;
+            &.filters {
+                border-top: 1px solid #bdc1c0;
+                justify-content: flex-start;
+            }
+        }
+    }
 }
