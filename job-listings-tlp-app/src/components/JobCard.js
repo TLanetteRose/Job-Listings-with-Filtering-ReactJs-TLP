@@ -36,7 +36,7 @@ export default function JobCard ({item, select}) {
                 {item.languages.map((language,i) => <span key={i} className='filter-item' onClick={() => select({value:language, key:'languages'})}>{language}</span>)}
             </div>
         </div>
-    )
+    );
 }
 
 
